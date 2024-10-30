@@ -80,7 +80,7 @@ namespace Data.Repository
             }
         }
 
-        public async Task<IEnumerable> SelectAsync()
+        public async Task<IEnumerable<T>> SelectAsync()
         {
             try
             {

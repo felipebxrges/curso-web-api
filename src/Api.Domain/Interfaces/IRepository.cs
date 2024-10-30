@@ -13,7 +13,7 @@ namespace Domain.Interfaces
         Task<T> UpdateAsync(T item);
         Task<bool> DeleteAsync(Guid Id);
         Task<T> SelectAsync(Guid Id);
-        Task<IEnumerable> SelectAsync();
+        Task<IEnumerable<T>> SelectAsync();
         Task<bool> ExistAsync(Guid Id);
 
     }
